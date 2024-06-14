@@ -1,11 +1,10 @@
 package util;
 
-import application.Program;
 import entities.Product;
 
 import java.util.function.Consumer;
 
-public class PriceUpdate implements Consumer<Product> {
+public class ConsumerPriceUpdate implements Consumer<Product> {
     @Override
     public void accept(Product product) {
         product.setPrice(product.getPrice() * 1.1);
